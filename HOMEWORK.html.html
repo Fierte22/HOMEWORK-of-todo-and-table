@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+    *{
+        box-sizing: border-box;
+        color:  #2c3e50;
+        padding: 0;
+        margin: 0;
+    }
+    .d-flex{
+        display: flex;
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 100px auto;
+        gap: 30px;
+    }
+    form{
+        flex: 1;
+        padding: 12px;
+        min-width: 330px;
+        border: none;
+        border-radius: 6px;
+        font-family: sans-serif;
+        box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.1);
+        background: url();
+    
+    }
+    h3{
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        margin: 10px;
+        padding: 6px;
+        color: rgb(155, 153, 153);
+    }
+    .input{
+        width: 100%;
+        margin: 20px auto;
+        padding: 15px;
+        border: none;
+        box-sizing: border-box;
+        border-radius: 4px;
+        background-color: rgb(245, 245, 245);
+    }
+    label{
+        margin: 10px auto 2px ;
+    }
+    button{
+        width: 49%;
+        margin: auto;
+        padding: 10px;
+        border: none;
+        gap: 6px;
+        border-radius: 6px;
+    }
+    .a{
+        background-color: rgb(252, 42, 42);
+        color: white;
+        border: none;
+        border-radius: 4px;
+    }
+    .b{
+        background-color: rgb(11, 196, 11);
+        color: white;
+        border: none;
+        border-radius: 4px;
+    }
+    .c{
+        background-color: rgb(11, 196, 11);
+        color: white;
+    }
+    .d{
+        background-color: rgb(0, 68, 255);
+        color: white;
+    }
+    h4{
+        text-align: center;
+        border-bottom: 1px solid lightgrey;
+        padding: 2px;
+        padding: 12px;
+        
+    }
+    .a{
+        cursor: pointer;
+        opacity: 0.7;
+    }
+    .b{
+        cursor: pointer;
+        opacity: 0.7;
+    }
+    .a:hover{
+        opacity: 1;
+
+    }
+    .b:hover{
+        opacity: 1;
+    
+    }
+    nav{
+            font-family: sans-serif;
+            font-weight: 300;
+            width: 100%;
+            background-size: cover;
+            background-color: rgb(3, 142, 255);
+            color: white;
+            font-size: xx-large;
+            text-align: center;
+            border-bottom: 1px solid rgb(0, 191, 255);
+            margin: none;
+            padding: 17px;
+        }
+    table{
+        flex: 3;
+        min-width: 400px;
+        box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.1);
+        padding: 12px;
+        font-family: sans-serif;
+        border-collapse: collapse;
+        font-size: 12px;
+    }
+    table tr{
+        border: 0px solid lightgray;
+        padding: 30px;
+    }
+    table tr:nth-of-type(even){
+        background-color: rgb(241, 241, 241);
+    }
+    table tr td{
+        padding: 15px;
+    }
+    table tr th{
+        padding: 16px;
+    }
+    table tr:hover{
+        background: #f6f6f7;
+        color: white;
+    }
+    .img{
+        border-radius: 100px;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        margin: 10px auto;
+        background-color: black;
+    }
+    .img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    tr td .img{
+        height: 45px;
+        width: 45px;
+    }
+    .img img:hover{
+        transform: scale(1.3);
+        cursor: pointer;
+    }
+    p{
+        font-size: 12px;
+    }
+    .soc1{
+        width: fit-content;
+        background-color: rgb(0, 140, 255);
+    }
+    .soc2{
+        width: fit-content;
+        background-color: rgb(231, 70, 97);
+    }
+    .soc3{
+        width: fit-content;
+        background-color: rgb(0, 183, 255);
+    }
+   </style>
+</head>
+<body>
+    <nav>Todo App In Vue</nav>
+<div class="d-flex">
+    <form>
+        <h3>Add Todo List</h3>
+        <label for="input">Title</label>
+        <input type="text" class="input" placeholder="Enter Todo Tittle" required>
+        <label for="input">Todo</label>
+        <input type="text" class="input" placeholder="Enter Todo Here" required>
+        <button class="c">Update Todo</button>
+        <button class="d">Add Todo</button>
+    
+    </form>
+
+   <table class="table">
+    <tr>
+        <th colspan="5"><h2 align="center" style="color: lightgray;">List Of Todo</h2></th>
+    </tr>
+     <tr>
+         <th>#</th>
+         <th>Todo Title </th>
+         <th>Todo Name</th>
+         <th colspan="2">Actions</th>
+        
+     </tr>
+     <tr>
+        <td>1</td>
+        <td>School Work</td>
+        <td>Koza Ivyombo</td>
+        <td>        <button class="a" type="button">Delete</button></td>
+        <td>        <button class="b" type="button">Update</button></td>
+     </tr>
+     <tr>
+        <td>1</td>
+        <td>School Work</td>
+        <td>Koza Ivyombo</td>
+        <td>        <button class="a" type="button">Delete</button></td>
+        <td>        <button class="b" type="button">Update</button></td>
+     </tr>
+     <tr>
+        <td>1</td>
+        <td>School Work</td>
+        <td>Koza Ivyombo</td>
+        <td>        <button class="a" type="button">Delete</button></td>
+        <td>        <button class="b" type="button">Update</button></td>
+     </tr>
+     <tr>
+        <td>1</td>
+        <td>School Work</td>
+        <td>Koza Ivyombo</td>
+        <td>        <button class="a" type="button">Delete</button></td>
+        <td>        <button class="b" type="button">Update</button></td>
+     </tr>
+     <tr>
+        <td>1</td>
+        <td>School Work</td>
+        <td>Koza Ivyombo</td>
+        <td>        <button class="a" type="button">Delete</button></td>
+        <td>        <button class="b" type="button">Update</button></td>
+     </tr>
+     <tr>
+        <td>1</td>
+        <td>School Work</td>
+        <td>Koza Ivyombo</td>
+        <td>        <button class="a" type="button">Delete</button></td>
+        <td>        <button class="b" type="button">Update</button></td>
+     </tr>
+     <tr>
+        <td>1</td>
+        <td>School Work</td>
+        <td>Koza Ivyombo</td>
+        <td>        <button class="a" type="button">Delete</button></td>
+        <td>        <button class="b" type="button">Update</button></td>
+     </tr>
+     
+    
+   </table> 
+</div>
+        
+   </table> 
+</div>
+
+<script src="javscript/javascript.js"></script>
+</body>
+</html>
